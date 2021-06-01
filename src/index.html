@@ -24,14 +24,19 @@
       autocomplete="off" 
       placeholder="Search images..."
       />
-      <button type="submit" class="search-form-btn">Search</button>
+      <button type="submit" class="btn search-form-btn">Search</button>
     </form>
 
     <ul class="gallery">
       <!-- Список <li> с карточками изображений -->
     </ul>
 
-    <button type="button" class="load-more-btn">Load more</button>
+    <button type="button" 
+    class="btn load-more-btn is-hidden" 
+    data-action="load-more"
+    id="load-more-button">
+      <span class="label">Load more</span>
+    </button>
 
     <script src="./index.js"></script>
   </body>
