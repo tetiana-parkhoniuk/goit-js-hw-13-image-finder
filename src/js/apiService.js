@@ -14,6 +14,7 @@ export default class ImagesApiServie {
             const response = await fetch(url);
             const data = await response.json();
             
+            this.incrementPage();
             return data.hits;
         } catch (error) {
             console.log(error);
